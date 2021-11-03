@@ -9,7 +9,7 @@ import Link from "next/link";
 const Article: NextPage = () => {
   const router = useRouter();
   const { id } = router.query;
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
     if (id) {
